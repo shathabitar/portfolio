@@ -1,0 +1,125 @@
+
+/* 
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+@font-face {
+  font-family: "Lobster";
+  src: url("LobsterTwo-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "Fontt";
+  src: url("PlayfairDisplay-Regular.ttf");
+}
+
+body {
+  font-family: "Fontt";
+    
+}
+
+*{
+  cursor: url('../assets/cursor.cur'), auto;
+}
+
+.logo {
+  height: 75px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 5%;
+  background-color: var(--fourth-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+/* Navigation links */
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+/* Hover effects */
+nav a:hover {
+  color: rgb(38, 58, 41);
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  nav a {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.6rem;
+  }
+}
+
+.aboutSec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  gap: 2rem;
+  /* optional */
+}
+
+.aboutSec h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: black;
+  min-height: 4rem;
+  overflow: hidden;
+  font-family: "Lobster", cursive !important;
+}
+
+.aboutp {
+  font-size: 1.2rem;
+  max-width: 600px;
+  color: #333;
+}
+

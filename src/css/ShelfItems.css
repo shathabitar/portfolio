@@ -1,0 +1,37 @@
+.shelf-items {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 3rem;
+    /* Increased gap */
+    margin-bottom: -6px;
+    /* Pull them down closer to the shelf */
+    position: relative;
+    z-index: 2;
+    /* Make sure images stay above shelf */
+}
+
+.shelf-item {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.shelf-img {
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.shelf-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.img-title {
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    color: #333;
+}
